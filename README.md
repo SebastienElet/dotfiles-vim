@@ -1,7 +1,7 @@
 vim
 ===
 
-Vim configuration
+# Vim configuration
 
-Installation : cd && git clone https://github.com/Nasga/vim.git .vim
-ln -s .vim/vimrc .vimrc
+Installation : 
+        cd && git clone https://github.com/Nasga/vim.git .vim && ln -s .vim/vimrc .vimrc
