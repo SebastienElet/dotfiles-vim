@@ -1,9 +1,10 @@
 set encoding=utf-8
 set number                      "Line number
 set visualbell                  "No sound
-set title			"Change term title
+set title                       "Change term title
 set autoindent 
 set expandtab
+set tabstop=4
 set background=dark
 set mouse=a                     "Enable mouse
 set autoread                    "Reload files changed outside vim
