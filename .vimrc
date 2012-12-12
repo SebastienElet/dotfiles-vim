@@ -1,6 +1,13 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+let &t_Co=256
+let g:solarized_termcolors=256
+let g:solarized_underline=0
+let g:solarized_visibility="low"
+
+colorscheme solarized
+
 set encoding=utf-8
 set number                      "Line number
 set visualbell                  "No sound
