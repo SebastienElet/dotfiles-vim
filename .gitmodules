@@ -7,3 +7,6 @@
 [submodule "bundle/checksyntax"]
 	path = bundle/checksyntax
 	url = https://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/syntax-php5"]
+	path = bundle/syntax-php5
+	url = https://github.com/vim-scripts/php.vim-for-php5.git
