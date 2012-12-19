@@ -10,3 +10,6 @@
 [submodule "bundle/syntax-php5"]
 	path = bundle/syntax-php5
 	url = https://github.com/vim-scripts/php.vim-for-php5.git
+[submodule "bundle/colors-solarized"]
+	path = bundle/colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
