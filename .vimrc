@@ -19,6 +19,7 @@ set background=dark
 set mouse=a                     "Enable mouse
 set autoread                    "Reload files changed outside vim
 set noswapfile
+set clipboard=unnamed           "Use alt to paste in osx
 
 syntax on
 
