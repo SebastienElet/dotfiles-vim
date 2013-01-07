@@ -16,3 +16,6 @@
 [submodule "bundle/syntax-javascript"]
 	path = bundle/syntax-javascript
 	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "bundle/syntax-json"]
+	path = bundle/syntax-json
+	url = https://github.com/vim-scripts/JSON.vim.git
