@@ -6,13 +6,19 @@ set number                      "Line number
 set visualbell                  "No sound
 set title                       "Change term title
 set autoindent 
-set expandtab
+set noexpandtab                 "No convert tab -> spaces
 set tabstop=4
 set background=dark
 set mouse=a                     "Enable mouse
+set nocursorcolumn
+set statusline=%<%w%f\ %=%y[%{&ff}][%6c][%{printf('%'.strlen(line('$')).'s',line('.'))}/%L][%3p%%]%{'['.(&readonly?'RO':'\ \ ').']'}%{'['.(&modified?'+':'-').']'}
 set autoread                    "Reload files changed outside vim
 set noswapfile
 set clipboard=unnamed           "Use alt to paste in osx
+set backspace=indent,eol,start  "Delete w/ insert
+
+" display indentation guides
+set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 
 syntax on
 
