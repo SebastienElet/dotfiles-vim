@@ -16,6 +16,7 @@ set autoread                    "Reload files changed outside vim
 set noswapfile
 set clipboard=unnamed           "Use alt to paste in osx
 set backspace=indent,eol,start  "Delete w/ insert
+set whichwrap+=<,>,[,]			"Move line with arrow left/right
 
 " display indentation guides
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
