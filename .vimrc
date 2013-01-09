@@ -29,4 +29,7 @@ let g:solarized_visibility="low"
 colorscheme solarized
 
 nnoremap <silent> <C-MouseDown> <C-W>-
-nnoremap <silent> <C-MouseUp> <C-W>+
+nnoremap <silent> <C-MouseUp> <C-W>+i
+
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
