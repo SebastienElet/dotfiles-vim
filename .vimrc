@@ -17,6 +17,7 @@ set noswapfile
 set clipboard=unnamed           "Use alt to paste in osx
 set backspace=indent,eol,start  "Delete w/ insert
 set whichwrap+=<,>,[,]			"Move line with arrow left/right
+let &titleold=getcwd()			"Reset term title when exit vim
 
 " display indentation guides
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
