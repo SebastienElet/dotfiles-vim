@@ -6,8 +6,8 @@ set number                      "Line number
 set visualbell                  "No sound
 set title                       "Change term title
 set autoindent 
-set noexpandtab                 "No convert tab -> spaces
-set tabstop=4
+set expandtab                   "Convert tab -> spaces
+set tabstop=2
 set background=dark
 set mouse=a                     "Enable mouse
 set nocursorcolumn
