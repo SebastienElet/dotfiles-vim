@@ -19,3 +19,12 @@
 [submodule "bundle/syntax-json"]
 	path = bundle/syntax-json
 	url = https://github.com/vim-scripts/JSON.vim.git
+[submodule "bundle/colors-codeschool"]
+	path = bundle/colors-codeschool
+	url = https://github.com/29decibel/codeschool-vim-theme.git
+[submodule "bundle/colors-mustang"]
+	path = bundle/colors-mustang
+	url = https://github.com/marcus/vim-mustang
+[submodule "colors-xoria256"]
+	path = colors-xoria256
+	url = https://github.com/vim-scripts/xoria256.vim.git
