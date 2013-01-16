@@ -25,3 +25,12 @@
 [submodule "bundle/colors-mustang"]
 	path = bundle/colors-mustang
 	url = https://github.com/marcus/vim-mustang
+[submodule "bundle/colors-xoria256"]
+	path = bundle/colors-xoria256
+	url = https://github.com/vim-scripts/xoria256.vim.git
+[submodule "bundle/colors-mango"]
+	path = bundle/colors-mango
+	url = https://github.com/goatslacker/mango.vim.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.git
