@@ -31,6 +31,8 @@ syntax on
 "let g:solarized_visibility="low"
 color codeschool
 
+vmap <Tab> >gv                "Ident selection
+vmap <S-Tab> <gv              "Remove indent on selection
 nnoremap <silent> <C-MouseDown> <C-W>-
 nnoremap <silent> <C-MouseUp> <C-W>+i
 
