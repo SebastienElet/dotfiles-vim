@@ -12,6 +12,7 @@ set background=dark
 set mouse=a                     "Enable mouse
 set nocursorcolumn
 set statusline=%<%w%f\ %=%y[%{&ff}][%6c][%{printf('%'.strlen(line('$')).'s',line('.'))}/%L][%3p%%]%{'['.(&readonly?'RO':'\ \ ').']'}%{'['.(&modified?'+':'-').']'}
+set laststatus=2                "Always show status bar
 set autoread                    "Reload files changed outside vim
 set noswapfile
 set clipboard=unnamed           "Use alt to paste in osx
@@ -35,4 +36,3 @@ vmap <Tab> >gv                "Ident selection
 vmap <S-Tab> <gv              "Remove indent on selection
 nnoremap <silent> <C-MouseDown> <C-W>-
 nnoremap <silent> <C-MouseUp> <C-W>+i
-
