@@ -32,6 +32,9 @@ let &t_Co=256
 "let g:solarized_visibility="low"
 color codeschool
 
+filetype on
+filetype plugin on
+
 vmap <Tab> >gv                "Ident selection
 vmap <S-Tab> <gv              "Remove indent on selection
 nnoremap <silent> <C-MouseDown> <C-W>-
