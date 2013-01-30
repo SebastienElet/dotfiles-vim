@@ -19,7 +19,7 @@ set clipboard=unnamed           "Use alt to paste in osx
 set backspace=indent,eol,start  "Delete w/ insert
 set whichwrap+=<,>,[,]			"Move line with arrow left/right
 let &titleold=getcwd()			"Reset term title when exit vim
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 1 "Enable autocomplete
 
 " display indentation guides
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
@@ -27,10 +27,11 @@ set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 syntax on
 
 let &t_Co=256
-"let g:solarized_termcolors=256
-"let g:solarized_underline=0
-"let g:solarized_visibility="low"
-color codeschool
+let g:solarized_termcolors=256
+let g:solarized_underline=0
+let g:solarized_visibility = "low"
+let g:solarized_contrast = "high"
+color solarized
 
 filetype on
 filetype plugin on
