@@ -20,6 +20,8 @@ set backspace=indent,eol,start  "Delete w/ insert
 set whichwrap+=<,>,[,]			"Move line with arrow left/right
 let &titleold=getcwd()			"Reset term title when exit vim
 let g:neocomplcache_enable_at_startup = 1 "Enable autocomplete
+set wildmenu                    "Autocomplete filenames
+set wildmode=longest,list       "Sort longest filename
 
 " display indentation guides
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
