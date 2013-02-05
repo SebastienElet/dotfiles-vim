@@ -27,6 +27,7 @@ set wildmode=longest,list       "Sort longest filename
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 
 syntax on
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 let &t_Co=256
 color badwolf
