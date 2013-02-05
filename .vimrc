@@ -29,11 +29,7 @@ set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 syntax on
 
 let &t_Co=256
-let g:solarized_termcolors=256
-let g:solarized_underline=0
-let g:solarized_visibility = "low"
-let g:solarized_contrast = "high"
-color solarized
+color badwolf
 
 filetype on
 filetype plugin on
