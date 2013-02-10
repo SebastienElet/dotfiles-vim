@@ -34,3 +34,6 @@
 [submodule "bundle/color-badwolf"]
 	path = bundle/color-badwolf
 	url = https://github.com/sjl/badwolf.git
+[submodule "bundle/jade"]
+	path = bundle/jade
+	url = git://github.com/digitaltoad/vim-jade.git
