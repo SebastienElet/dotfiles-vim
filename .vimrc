@@ -27,7 +27,7 @@ set wildmode=longest,list       "Sort longest filename
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 
 " 80 chars limit
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+highlight OverLength ctermbg=darkred ctermfg=white guibg=darkred
 match OverLength /\%81v.\+/
 set colorcolumn=80
 
