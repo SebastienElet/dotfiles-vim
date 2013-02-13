@@ -26,6 +26,11 @@ set wildmode=longest,list       "Sort longest filename
 " display indentation guides
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 
+" 80 chars limit
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+match OverLength /\%81v.\+/
+set colorcolumn=80
+
 syntax on
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
