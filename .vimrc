@@ -6,9 +6,6 @@ set encoding=utf-8
 set number                      "Line number
 set visualbell                  "No sound
 set title                       "Change term title
-set autoindent 
-set expandtab                   "Convert tab -> spaces
-set tabstop=2
 set background=dark
 set mouse=a                     "Enable mouse
 set nocursorcolumn
@@ -22,6 +19,15 @@ set whichwrap+=<,>,[,]          "Move line with arrow left/right
 let &titleold=getcwd()          "Reset term title when exit vim
 set wildmenu                    "Autocomplete filenames
 set wildmode=longest,list       "Sort longest filename
+
+" Tabs
+set autoindent
+set expandtab                   "Convert tab -> spacei
+set tabstop=4                   "A tab = 4 spaces (most used in py/php...)
+set shiftwidth=4
+set softtabstop=4
+set copyindent
+set smarttab
 
 " display indentation guides
 set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
