@@ -32,6 +32,10 @@ highlight OverLength ctermbg=darkred ctermfg=white guibg=darkred
 match OverLength /\%81v.\+/
 set colorcolumn=80
 
+" Syntastic
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
 syntax on
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
