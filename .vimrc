@@ -20,7 +20,6 @@ set clipboard=unnamed           "Use alt to paste in osx
 set backspace=indent,eol,start  "Delete w/ insert
 set whichwrap+=<,>,[,]          "Move line with arrow left/right
 let &titleold=getcwd()          "Reset term title when exit vim
-let g:neocomplcache_enable_at_startup = 1 "Enable autocomplete
 set wildmenu                    "Autocomplete filenames
 set wildmode=longest,list       "Sort longest filename
 
@@ -35,6 +34,10 @@ set colorcolumn=80
 " Syntastic
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+
+" Neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_max_list = 10
 
 syntax on
 autocmd BufNewFile,BufRead *.json set ft=javascript
