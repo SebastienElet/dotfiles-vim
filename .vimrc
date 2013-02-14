@@ -47,5 +47,9 @@ filetype plugin on
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+" Keep selection after indent
+vnoremap < <gv
+vnoremap > >gv
+
 nnoremap <silent> <C-MouseDown> <C-W>-
 nnoremap <silent> <C-MouseUp> <C-W>+i
