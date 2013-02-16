@@ -30,7 +30,9 @@ set copyindent
 set smarttab
 
 " display indentation guides
-set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
+" set list listchars=tab:\❘\,trail:·,extends:»,precedes:«,nbsp:×
+" set lcs=tab:\|\,trail:-,extends:»,precedes:«,nbsp:×
+" set lcs=tab:\|\ ,trail:-,precedes:<,extends:>
 
 " 80 chars limit
 highlight OverLength ctermbg=darkred ctermfg=white guibg=darkred
