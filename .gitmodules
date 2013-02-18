@@ -40,3 +40,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/colors-monokai"]
+	path = bundle/colors-monokai
+	url = https://github.com/sickill/vim-monokai.git
