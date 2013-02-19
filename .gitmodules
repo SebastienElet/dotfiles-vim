@@ -28,8 +28,8 @@
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/color-badwolf"]
-	path = bundle/color-badwolf
+[submodule "bundle/colors-badwolf"]
+	path = bundle/colors-badwolf
 	url = https://github.com/sjl/badwolf.git
 [submodule "bundle/jade"]
 	path = bundle/jade
