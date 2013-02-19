@@ -40,3 +40,6 @@
 [submodule "bundle/colors-monokai"]
 	path = bundle/colors-monokai
 	url = https://github.com/sickill/vim-monokai.git
+[submodule "bundle/colors-badwolf"]
+	path = bundle/colors-badwolf
+	url = https://github.com/sjl/badwolf.git
