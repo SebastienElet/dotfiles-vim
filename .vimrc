@@ -49,6 +49,7 @@ let g:neocomplcache_max_list = 10
 
 syntax on
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead *.vue.php set ft=html
 
 let &t_Co=256
 color badwolf
