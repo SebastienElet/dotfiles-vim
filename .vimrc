@@ -8,8 +8,13 @@ set visualbell                  "No sound
 set title                       "Change term title
 set background=dark
 set mouse=a                     "Enable mouse
-set nocursorcolumn
-set statusline=%<%w%f\ %=%y[%{&ff}][%6c][%{printf('%'.strlen(line('$')).'s',line('.'))}/%L][%3p%%]%{'['.(&readonly?'RO':'\ \ ').']'}%{'['.(&modified?'+':'-').']'}
+" set nocursorcolumn
+set statusline=%<%w%f\ %=%y[%{&ff}]
+set statusline+=[%6c]
+set statusline+=[%{printf('%'.strlen(line('$')).'s',line('.'))}/%L]
+set statusline+=[%3p%%]
+set statusline+=%{'['.(&readonly?'RO':'\ \ ').']'}
+set statusline+=%{'['.(&modified?'+':'-').']'}
 set laststatus=2                "Always show status bar
 set autoread                    "Reload files changed outside vim
 set noswapfile
