@@ -42,7 +42,9 @@ set smarttab
 " 80 chars limit
 highlight OverLength ctermbg=darkred ctermfg=white guibg=darkred
 match OverLength /\%81v.\+/
-set colorcolumn=80
+if exists("&colorcolumn")
+  set colorcolumn=80
+endif
 
 " Syntastic
 let g:syntastic_error_symbol='✗'
