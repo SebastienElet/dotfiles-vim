@@ -2,13 +2,13 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
 
-set encoding=utf-8
+set nocompatible                "Non compatiblity with vi
+set encoding=utf-8              "Default encoding
 set number                      "Line number
 set visualbell                  "No sound
 set title                       "Change term title
 set background=dark
 set mouse=a                     "Enable mouse
-" set nocursorcolumn
 set statusline=%<%w%f\ %=%y[%{&ff}]
 set statusline+=[%6c]
 set statusline+=[%{printf('%'.strlen(line('$')).'s',line('.'))}/%L]
@@ -24,6 +24,12 @@ set whichwrap+=<,>,[,]          "Move line with arrow left/right
 let &titleold=getcwd()          "Reset term title when exit vim
 set wildmenu                    "Autocomplete filenames
 set wildmode=longest,list       "Sort longest filename
+
+" Search
+set hlsearch                    "Hihlight matches
+set incsearch                   "Incremental searching
+set ignorecase                  "Searches are case insisensitive
+set smartcase                   " ... unless they contain one capital letter
 
 " Tabs
 set autoindent
@@ -72,3 +78,5 @@ vnoremap > >gv
 
 nnoremap <silent> <C-MouseDown> <C-W>-
 nnoremap <silent> <C-MouseUp> <C-W>+i
+" clear the search buffer when hitting return
+nnoremap <CR> :nohlsearch<cr>
