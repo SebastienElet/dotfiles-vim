@@ -35,9 +35,9 @@ set smartcase                   " ... unless they contain one capital letter
 " Tabs
 set autoindent
 set expandtab                   "Convert tab -> spacei
-set tabstop=4                   "A tab = 4 spaces (most used in py/php...)
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2                   "A tab = 2 spaces
+set shiftwidth=2
+set softtabstop=2
 set copyindent
 set smarttab
 
