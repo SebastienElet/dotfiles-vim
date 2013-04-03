@@ -57,6 +57,11 @@ endif
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+" Indent line
+let g:indentLine_minimumIndentLevel = 0
+let g:indentLine_char = '¦'
+let g:indentLine_color_term = 239
+
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_max_list = 10
