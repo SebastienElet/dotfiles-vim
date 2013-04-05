@@ -10,6 +10,9 @@ set visualbell                  "No sound
 set title                       "Change term title
 set background=dark
 set mouse=a                     "Enable mouse
+if has('mouse_sgr')
+  set ttymouse=sgr
+endif
 set statusline=%<%w%f\ %=%y[%{&ff}]
 set statusline+=[%6c]
 set statusline+=[%{printf('%'.strlen(line('$')).'s',line('.'))}/%L]
