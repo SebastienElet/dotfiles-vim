@@ -89,3 +89,9 @@ nnoremap <silent> <C-MouseDown> <C-W>-
 nnoremap <silent> <C-MouseUp> <C-W>+i
 " clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<cr>
+
+" Learning remap
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop> 
