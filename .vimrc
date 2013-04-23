@@ -50,8 +50,6 @@ set smarttab
 " set lcs=tab:\|\ ,trail:-,precedes:<,extends:>
 
 " 80 chars limit
-highlight OverLength ctermbg=darkred ctermfg=white guibg=darkred
-match OverLength /\%81v.\+/
 if exists("&colorcolumn")
   set colorcolumn=80
 endif
