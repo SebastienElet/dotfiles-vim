@@ -76,6 +76,7 @@ color badwolf
 
 filetype on
 filetype plugin on
+runtime macros/matchit.vim      " Enable jump betwen tags
 
 vmap <Tab> >gv
 vmap <S-Tab> <gv
