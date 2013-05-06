@@ -68,8 +68,20 @@ let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_max_list = 10
 
 syntax on
+
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.vue.php set ft=html
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+autocmd BufWritePre *.php %s/\s\+$//ge
+autocmd BufWritePre *.php %s/if ( /if (/ge
+autocmd BufWritePre *.php %s/if(/if (/ge
+autocmd BufWritePre *.php %s/foreach(/foreach (/ge
+
 
 let &t_Co=256
 color badwolf
