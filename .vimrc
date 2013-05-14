@@ -77,6 +77,13 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+" Php-cs-fixer
+let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer"
+let g:php_cs_fixer_level = "all"
+let g:php_cs_fixer_config = "default"
+nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
+nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+
 autocmd BufWritePre *.php %s/\s\+$//ge
 autocmd BufWritePre *.php %s/if ( /if (/ge
 autocmd BufWritePre *.php %s/if(/if (/ge
