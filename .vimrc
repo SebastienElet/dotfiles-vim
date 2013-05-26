@@ -104,7 +104,13 @@ nnoremap <silent> <C-MouseUp> <C-W>+i
 nnoremap <CR> :nohlsearch<cr>
 
 " Learning remap
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop> 
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+hi StatusLine ctermbg=234 ctermfg=39
