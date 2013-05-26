@@ -13,12 +13,26 @@ set mouse=a                     "Enable mouse
 if has('mouse_sgr')
   set ttymouse=sgr
 endif
+" Status line
+function! StatlineBufCount()
+  if !exists("s:statline_n_buffers")
+    let s:statline_n_buffers = len(filter(range(1,bufnr('$')), 'buflisted(v:val)'))
+  endif
+  return s:statline_n_buffers
+endfunction
+set statusline=[%{StatlineBufCount()}\:%n]\ %<
+augroup statline_nbuf
+  autocmd!
+  autocmd BufAdd,BufDelete * unlet! s:statline_n_buffers
+augroup END
 set statusline=%<%w%f\ %=%y[%{&ff}]
 set statusline+=[%6c]
 set statusline+=[%{printf('%'.strlen(line('$')).'s',line('.'))}/%L]
 set statusline+=[%3p%%]
+set statusline+=%P
 set statusline+=%{'['.(&readonly?'RO':'\ \ ').']'}
 set statusline+=%{'['.(&modified?'+':'-').']'}
+
 set laststatus=2                "Always show status bar
 set autoread                    "Reload files changed outside vim
 set noswapfile
@@ -64,18 +78,13 @@ let g:indentLine_char = '¦'
 let g:indentLine_color_term = 239
 
 " Neocomplcache
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 0
 let g:neocomplcache_max_list = 10
 
 syntax on
 
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.vue.php set ft=html
-
-" Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
 
 " Php-cs-fixer
 let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer"
@@ -88,7 +97,7 @@ autocmd BufWritePre *.php %s/\s\+$//ge
 autocmd BufWritePre *.php %s/if ( /if (/ge
 autocmd BufWritePre *.php %s/if(/if (/ge
 autocmd BufWritePre *.php %s/foreach(/foreach (/ge
-
+" %s/\s*,\s*/, /g
 
 let &t_Co=256
 color badwolf
