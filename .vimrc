@@ -14,25 +14,13 @@ if has('mouse_sgr')
   set ttymouse=sgr
 endif
 " Status line
-function! StatlineBufCount()
-  if !exists("s:statline_n_buffers")
-    let s:statline_n_buffers = len(filter(range(1,bufnr('$')), 'buflisted(v:val)'))
-  endif
-  return s:statline_n_buffers
-endfunction
-set statusline=[%{StatlineBufCount()}\:%n]\ %<
-augroup statline_nbuf
-  autocmd!
-  autocmd BufAdd,BufDelete * unlet! s:statline_n_buffers
-augroup END
-set statusline=%<%w%f\ %=%y[%{&ff}]
-set statusline+=[%6c]
+set statusline=[%n]\ %<         "Buffer Number
+set statusline+=%<%w%f\ %=%y[%{&ff}] "FileName
+set statusline+=[%6c]           "Filetype
 set statusline+=[%{printf('%'.strlen(line('$')).'s',line('.'))}/%L]
 set statusline+=[%3p%%]
-set statusline+=%P
 set statusline+=%{'['.(&readonly?'RO':'\ \ ').']'}
 set statusline+=%{'['.(&modified?'+':'-').']'}
-
 set laststatus=2                "Always show status bar
 set autoread                    "Reload files changed outside vim
 set noswapfile
@@ -58,11 +46,6 @@ set softtabstop=2
 set copyindent
 set smarttab
 
-" display indentation guides
-" set list listchars=tab:\❘\,trail:·,extends:»,precedes:«,nbsp:×
-" set lcs=tab:\|\,trail:-,extends:»,precedes:«,nbsp:×
-" set lcs=tab:\|\ ,trail:-,precedes:<,extends:>
-
 " 80 chars limit
 if exists("&colorcolumn")
   set colorcolumn=80
@@ -71,6 +54,9 @@ endif
 " Syntastic
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+
+" display indentation guides
+set lcs=tab:\|\ ,trail:-,precedes:<,extends:>
 
 " Indent line
 let g:indentLine_minimumIndentLevel = 0
