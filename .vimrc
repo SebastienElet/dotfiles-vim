@@ -113,4 +113,7 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+nnoremap n nzz
+nnoremap N Nzz
+
 hi StatusLine ctermbg=234 ctermfg=39
