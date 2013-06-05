@@ -4,21 +4,6 @@
 [submodule "bundle/syntax-php5"]
 	path = bundle/syntax-php5
 	url = https://github.com/vim-scripts/php.vim-for-php5.git
-[submodule "bundle/colors-solarized"]
-	path = bundle/colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
-[submodule "bundle/colors-codeschool"]
-	path = bundle/colors-codeschool
-	url = https://github.com/29decibel/codeschool-vim-theme.git
-[submodule "bundle/colors-mustang"]
-	path = bundle/colors-mustang
-	url = https://github.com/marcus/vim-mustang
-[submodule "bundle/colors-xoria256"]
-	path = bundle/colors-xoria256
-	url = https://github.com/vim-scripts/xoria256.vim.git
-[submodule "bundle/colors-mango"]
-	path = bundle/colors-mango
-	url = https://github.com/goatslacker/mango.vim.git
 [submodule "bundle/syntax-coffee-script"]
 	path = bundle/syntax-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -31,9 +16,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/colors-monokai"]
-	path = bundle/colors-monokai
-	url = https://github.com/sickill/vim-monokai.git
 [submodule "bundle/colors-badwolf"]
 	path = bundle/colors-badwolf
 	url = https://github.com/sjl/badwolf.git
