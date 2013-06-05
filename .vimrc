@@ -77,6 +77,13 @@ autocmd BufNewFile,BufRead *.vue.php set ft=html
 filetype on
 filetype plugin on
 " }}}
+" Windows {{{
+" Smart moving between windows r
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+" }}}
 " Hard mode {{{
 noremap <Up> <nop>
 noremap <Down> <nop>
