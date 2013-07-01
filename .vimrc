@@ -94,6 +94,10 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 " }}}
+" Binds {{{
+iabbrev </ </<C-x><C-o>
+inoremap {<CR>  {<CR>}<Esc>O<Tab>
+" }}}
 
 " Plugin:Pathogen {{{
 call pathogen#runtime_append_all_bundles()
