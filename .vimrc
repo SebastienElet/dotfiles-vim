@@ -15,7 +15,7 @@ set whichwrap+=<,>,[,]          "Move line with arrow left/right
 let &titleold=getcwd()          "Reset term title when exit vim
 set wildmenu                    "Autocomplete filenames
 set wildmode=longest,list       "Sort longest filename
-
+set cursorline                  "Hl the line of the cursor
 " 80 chars limit
 if exists("&colorcolumn")
   set colorcolumn=80
