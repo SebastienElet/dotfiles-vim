@@ -97,6 +97,7 @@ inoremap <right> <nop>
 " Binds {{{
 iabbrev </ </<C-x><C-o>
 inoremap {<CR>  {<CR>}<Esc>O<Tab>
+let mapleader = "-"
 " }}}
 
 " Plugin:Pathogen {{{
