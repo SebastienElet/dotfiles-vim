@@ -84,6 +84,11 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 " }}}
+" Diff {{{
+if &diff
+  set diffopt+=iwhite
+endif
+" }}}
 " Hard mode {{{
 noremap <Up> <nop>
 noremap <Down> <nop>
@@ -96,6 +101,7 @@ inoremap <right> <nop>
 " }}}
 " Binds {{{
 iabbrev </ </<C-x><C-o>
+inoremap jk <Esc>
 inoremap {<CR>  {<CR>}<Esc>O<Tab>
 let mapleader = "-"
 " }}}
