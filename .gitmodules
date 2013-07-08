@@ -25,3 +25,6 @@
 [submodule "bundle/syntax-nginx"]
 	path = bundle/syntax-nginx
 	url = https://github.com/littleq0903/vim-nginx.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = http://github.com/kien/ctrlp.vim
