@@ -21,14 +21,9 @@ if exists("&colorcolumn")
 endif
 " }}}
 " Mouse {{{
-set mouse=a                     "Enable mouse
-if has('mouse_sgr')
-  set ttymouse=sgr
-endif
-
-" Enable scroll with mouse
-nnoremap <silent> <C-MouseDown> <C-W>-
-nnoremap <silent> <C-MouseUp> <C-W>+i
+set mouse=
+" nnoremap <silent> <C-MouseDown> <C-W>-
+" nnoremap <silent> <C-MouseUp> <C-W>+i
 " }}}
 " Statusline {{{
 set statusline=[%n]\ %<         "Buffer Number
