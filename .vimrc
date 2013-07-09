@@ -5,6 +5,8 @@ set nocompatible                "Non compatiblity with vi
 set encoding=utf-8              "Default encoding
 set number                      "Line number
 set ttyfast                     "More move while redraw
+set lazyredraw                  "No redraw while doing macro
+set hidden                      "Buffer are hide when abandoned
 set visualbell                  "No sound
 set title                       "Change term title
 set autoread                    "Reload files changed outside vim
