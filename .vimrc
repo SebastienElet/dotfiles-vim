@@ -11,7 +11,6 @@ set autoread                    "Reload files changed outside vim
 set noswapfile
 set clipboard=unnamed           "Use alt to paste in osx
 set backspace=indent,eol,start  "Delete w/ insert
-set whichwrap+=<,>,[,]          "Move line with arrow left/right
 let &titleold=getcwd()          "Reset term title when exit vim
 set wildmenu                    "Autocomplete filenames
 set wildmode=longest,list       "Sort longest filename
