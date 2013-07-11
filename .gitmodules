@@ -19,9 +19,11 @@
 [submodule "bundle/indentLine"]
 	path = bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
+	ignore = dirty
 [submodule "bundle/php-cs-fixer"]
 	path = bundle/php-cs-fixer
 	url = https://github.com/stephpy/vim-php-cs-fixer.git
+	ignore = dirty
 [submodule "bundle/syntax-nginx"]
 	path = bundle/syntax-nginx
 	url = https://github.com/littleq0903/vim-nginx.git
