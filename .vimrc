@@ -68,6 +68,9 @@ vmap <S-Tab> <gv
 vnoremap < <gv
 vnoremap > >gv
 " }}}
+" Folds {{{
+set foldmethod=syntax
+" }}}
 " Files {{{ 
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead *.vue.php set ft=html
