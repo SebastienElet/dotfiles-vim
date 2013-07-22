@@ -17,6 +17,7 @@ let &titleold=getcwd()          "Reset term title when exit vim
 set wildmenu                    "Autocomplete filenames
 set wildmode=longest,list       "Sort longest filename
 set cursorline                  "Hl the line of the cursor
+set showcmd                     "Display cmd
 autocmd BufEnter * silent! lcd %:p:h
 " 80 chars limit
 if exists("&colorcolumn")
