@@ -19,6 +19,7 @@ set wildmode=longest,list       "Sort longest filename
 set cursorline                  "Hl the line of the cursor
 set showcmd                     "Display cmd
 set scrolloff=7                 "Keep 7 lines when scroll (top|bottom)
+set timeout timeoutlen=1000 ttimeoutlen=100
 autocmd BufEnter * silent! lcd %:p:h
 " 80 chars limit
 if exists("&colorcolumn")
