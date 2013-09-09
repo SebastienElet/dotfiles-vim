@@ -50,7 +50,7 @@ set smartcase                   " ... unless they contain one capital letter
 nnoremap n nzz
 nnoremap N Nzz
 " clear the search buffer when hitting return
-nnoremap <CR> :nohlsearch<cr>
+nnoremap <silent> <CR> :nohlsearch<cr>
 " }}}
 " Tabs & Indent {{{
 set autoindent
