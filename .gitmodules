@@ -29,7 +29,7 @@
 	url = https://github.com/littleq0903/vim-nginx.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = http://github.com/kien/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
 [submodule "bundle/dirdiff"]
 	path = bundle/dirdiff
 	url = https://github.com/vim-scripts/DirDiff.vim.git
