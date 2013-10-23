@@ -105,8 +105,6 @@ inoremap <right> <nop>
 iabbrev </ </<C-x><C-o>
 inoremap jk <Esc>
 inoremap {<CR>  {<CR>}<Esc>O<Tab>
-nnoremap <A-a> <C-a>
-nnoremap <A-x> <C-x>
 let mapleader = "-"
 " }}}
 
