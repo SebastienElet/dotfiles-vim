@@ -16,10 +16,6 @@
 [submodule "bundle/colors-badwolf"]
 	path = bundle/colors-badwolf
 	url = https://github.com/sjl/badwolf.git
-[submodule "bundle/indentLine"]
-	path = bundle/indentLine
-	url = https://github.com/Yggdroot/indentLine.git
-	ignore = dirty
 [submodule "bundle/php-cs-fixer"]
 	path = bundle/php-cs-fixer
 	url = https://github.com/stephpy/vim-php-cs-fixer.git
