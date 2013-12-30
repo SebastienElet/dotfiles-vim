@@ -61,7 +61,7 @@ set softtabstop=2
 set copyindent
 set smarttab
 " display indentation guides
-set lcs=tab:\|\ ,trail:-,precedes:<,extends:>
+set lcs=tab:→\ ,trail:-,nbsp:·,precedes:<,extends:>
 
 " Indent with tabs
 vmap <Tab> >gv
