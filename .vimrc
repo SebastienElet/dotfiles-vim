@@ -145,5 +145,5 @@ let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor -g "" %
 set background=dark
 syntax on
 let &t_Co=256
-color badwolf
+color default
 " }}}
