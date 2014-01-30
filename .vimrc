@@ -60,8 +60,7 @@ set shiftwidth=2
 set softtabstop=2
 set copyindent
 set smarttab
-" display indentation guides
-set lcs=tab:→\ ,trail:-,nbsp:·,precedes:<,extends:>
+set list listchars=tab:→\ ,trail:·,eol:$,extends:»,precedes:«,nbsp:×
 
 " Indent with tabs
 vmap <Tab> >gv
