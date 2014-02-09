@@ -60,7 +60,7 @@ set shiftwidth=2
 set softtabstop=2
 set copyindent
 set smarttab
-set list listchars=tab:→\ ,trail:·,eol:$,extends:»,precedes:«,nbsp:×
+set list listchars=tab:→\ ,trail:·,eol:↩,extends:»,precedes:«,nbsp:×
 
 " Indent with tabs
 vmap <Tab> >gv
@@ -84,6 +84,7 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+autocmd VimResized * tabdo wincmd =
 " }}}
 " Diff {{{
 if &diff
@@ -114,11 +115,6 @@ call pathogen#infect()
 " Plugin:Syntastic {{{
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
-" }}}
-" Plugin:IndentLine {{{
-let g:indentLine_minimumIndentLevel = 0
-let g:indentLine_char = '¦'
-let g:indentLine_color_term = 239
 " }}}
 " Plugin:Php-cs-fixer {{{
 let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer"
