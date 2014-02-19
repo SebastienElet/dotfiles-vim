@@ -15,7 +15,7 @@ set clipboard=unnamed           "Use alt to paste in osx
 set backspace=indent,eol,start  "Delete w/ insert
 let &titleold=getcwd()          "Reset term title when exit vim
 set wildmenu                    "Autocomplete filenames
-set wildmode=longest,list       "Sort longest filename
+set wildmode=longest:full,list:full
 set cursorline                  "Hl the line of the cursor
 set showcmd                     "Display cmd
 set scrolloff=7                 "Keep 7 lines when scroll (top|bottom)
@@ -27,8 +27,6 @@ endif
 " }}}
 " Mouse {{{
 set mouse=
-" nnoremap <silent> <C-MouseDown> <C-W>-
-" nnoremap <silent> <C-MouseUp> <C-W>+i
 " }}}
 " Statusline {{{
 set statusline=[%n]\ %<         "Buffer Number
@@ -127,7 +125,6 @@ autocmd BufWritePre *.php %s/\s\+$//ge
 autocmd BufWritePre *.php %s/if ( /if (/ge
 autocmd BufWritePre *.php %s/if(/if (/ge
 autocmd BufWritePre *.php %s/foreach(/foreach (/ge
-" %s/\s*,\s*/, /g
 " }}}
 " Plugin:matchit {{{
 runtime macros/matchit.vim      " Enable jump betwen tags
