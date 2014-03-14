@@ -99,6 +99,7 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 " }}}
 " Binds {{{
+nnoremap Q <nop>
 iabbrev </ </<C-x><C-o>
 iabbrev fu function() {<CR>
 iabbrev fi function(item, i, t) {<CR>
