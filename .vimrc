@@ -101,6 +101,9 @@ inoremap <right> <nop>
 " Binds {{{
 nnoremap Q <nop>
 iabbrev </ </<C-x><C-o>
+nmap <C-s> :w<CR>
+vmap <C-s> <Esc><C-s>gv
+imap <C-s> <Esc><C-s>
 iabbrev fu function() {<CR>
 iabbrev fi function(item, i, t) {<CR>
 inoremap jk <Esc>
