@@ -32,3 +32,6 @@
 [submodule "bundle/ag"]
 	path = bundle/ag
 	url = https://github.com/rking/ag.vim
+[submodule "bundle/qargs"]
+	path = bundle/qargs
+	url = https://github.com/nelstrom/vim-qargs.git
