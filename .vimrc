@@ -118,6 +118,7 @@ call pathogen#infect()
 " Plugin:Syntastic {{{
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 " }}}
 " Plugin:Php-cs-fixer {{{
 let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer"

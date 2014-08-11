@@ -3,8 +3,9 @@
 Install : 
 
 `````bash
-cd && git clone --recursive https://github.com/Nasga/dotfiles-vim.git \
-  .vim && ln -s .vim/.vimrc .vimrc && vim +Helptags +qa
+cd && git clone --recursive https://github.com/Nasga/dotfiles-vim.git .vim \
+  && ln -s .vim/.vimrc .vimrc && ln -s .vim/.vimrc .nvimrc \
+  && ln -s .vim .nvim && vim +Helptags +qa
 `````
 
 Update :
