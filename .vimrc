@@ -119,6 +119,7 @@ call pathogen#infect()
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_js_checkers = ['jshint', 'jscs']
 " }}}
 " Plugin:Php-cs-fixer {{{
 let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer"
@@ -136,7 +137,7 @@ autocmd BufWritePre *.php %s/foreach(/foreach (/ge
 runtime macros/matchit.vim      " Enable jump betwen tags
 " }}}
 " Plugin:ctrlp {{{
-let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor -g "" %s '
+let g:ctrlp_user_command = 'ag --nogroup --nobreak --noheading --nocolor --hidden -g "" %s '
 " }}}
 
 " Colors {{{
