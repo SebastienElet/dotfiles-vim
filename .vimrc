@@ -68,6 +68,26 @@ vnoremap > >gv
 " }}}
 " Folds {{{
 set foldmethod=syntax
+set foldlevelstart=0
+
+" Space to toggle folds.
+nnoremap <Space> za
+vnoremap <Space> za
+
+" Make zO recursively open whatever fold we're in, even if it's partially open.
+nnoremap zO zczO
+
+let g:html_indent_tags = ['p', 'li']
+augroup ft_html
+    au!
+    au FileType html setlocal foldmethod=manual
+augroup END
+
+augroup ft_javascript
+    au!
+    au FileType javascript setlocal foldmethod=marker
+    au FileType javascript setlocal foldmarker={,}
+augroup END
 " }}}
 " Files {{{ 
 autocmd BufNewFile,BufRead *.json set ft=javascript
@@ -104,8 +124,6 @@ iabbrev </ </<C-x><C-o>
 nmap <C-s> :w<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
-iabbrev fu function() {<CR>
-iabbrev fi function(item, i, t) {<CR>
 inoremap jk <Esc>
 inoremap {<CR>  {<CR>}<Esc>O<Tab>
 let mapleader = "-"
