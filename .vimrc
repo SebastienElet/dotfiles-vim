@@ -119,8 +119,16 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 " }}}
 " Binds {{{
+function! EatChar(pat)
+  let c = nr2char(getchar(0))
+  return (c =~ a:pat) ? '' : c
+endfunction
+function! MakeSpacelessIabbrev(from, to)
+  execute "iabbrev <silent> ".a:from." ".a:to."<C-R>=EatChar('\\s')<CR>"
+endfunction
 nnoremap Q <nop>
-iabbrev </ </<C-x><C-o>
+" iabbrev </ </<C-x><C-o>
+call MakeSpacelessIabbrev('</', '</<C-x><C-o>')
 nmap <C-s> :w<CR>
 vmap <C-s> <Esc><C-s>gv
 imap <C-s> <Esc><C-s>
