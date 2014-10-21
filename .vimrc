@@ -47,7 +47,7 @@ set smartcase                   " ... unless they contain one capital letter
 nnoremap n nzz
 nnoremap N Nzz
 " clear the search buffer when hitting return
-nnoremap <silent> <CR> :nohlsearch<cr>
+nnoremap <silent> <CR> :nohlsearch<CR>:w<CR>
 " }}}
 " Tabs & Indent {{{
 set autoindent
@@ -129,9 +129,6 @@ endfunction
 nnoremap Q <nop>
 " iabbrev </ </<C-x><C-o>
 call MakeSpacelessIabbrev('</', '</<C-x><C-o>')
-nmap <C-s> :w<CR>
-vmap <C-s> <Esc><C-s>gv
-imap <C-s> <Esc><C-s>
 inoremap jk <Esc>
 inoremap {<CR>  {<CR>}<Esc>O<Tab>
 let mapleader = "-"
@@ -157,6 +154,7 @@ nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
 autocmd BufWritePre *.php %s/\s\+$//ge
 autocmd BufWritePre *.php %s/if ( /if (/ge
 autocmd BufWritePre *.php %s/if(/if (/ge
+autocmd BufWritePre *.php %s/,\$/, \$/ge
 autocmd BufWritePre *.php %s/foreach(/foreach (/ge
 " }}}
 " Plugin:matchit {{{
